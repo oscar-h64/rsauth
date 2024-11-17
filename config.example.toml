@@ -1,0 +1,5 @@
+# debug = false
+# http_port = 3001
+postgres_connection_string = "postgres://postgres:password@localhost:5432/rsauth"
+private_key_path = "keys/private.pem"
+public_key_path = "keys/public.pem"
