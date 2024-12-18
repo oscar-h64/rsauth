@@ -57,9 +57,7 @@ jobs:
 
       - name: Set up Rust
         run:
-          rustup update stable
-          rustup target add aarch64-unknown-linux-gnu
-          rustup default stable
+          rustup update stable && rustup default stable && rustup target add aarch64-unknown-linux-gnu
 
       - uses: Swatinem/rust-cache@v2
 
