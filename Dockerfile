@@ -2,7 +2,9 @@ FROM debian:bookworm-slim
 
 RUN apt-get update && apt-get install -y libpq5
 
-ADD rsauth-server /rust/bin/rsauth-server
+ARG TARGETARCH
+
+ADD rsauth-server-$TARGETARCH /rust/bin/rsauth-server
 
 EXPOSE 3001
 
