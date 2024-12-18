@@ -55,6 +55,10 @@ jobs:
         with:
           install: true
 
+      - name: Set up aarch64 GCC
+        run:
+          apt-get install -y gcc-aarch64-linux-gnu
+
       - name: Set up Rust
         run:
           rustup update stable && rustup default stable && rustup target add aarch64-unknown-linux-gnu
