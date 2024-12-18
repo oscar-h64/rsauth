@@ -25,3 +25,7 @@ tower-http = { version = "0.6", features = ["compression-full", "decompression-f
 tracing = "0.1"
 tracing-subscriber = "0.3"
 uuid = { version = "1.11", features = ["v4"] }
+
+[target.'cfg(target_arch = "aarch64")'.dependencies]
+pq-sys = { version = "0.6", features = ["bundled"] }
+openssl-sys = { version = "0.9.100", features = ["vendored"] }

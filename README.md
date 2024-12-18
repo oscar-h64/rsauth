@@ -3,9 +3,7 @@
 A minimal OAuth2 server written in Rust, with an accompanying (opinionated) library for validating tokens and enforcing
 roles in Axum handlers.
 
-CI exists to generate amd64 images. I want arm64 images too, but the cross-compilation story is still pretty sad almost
-universally. Hopefully GitHub opens ARM images to non-orgs soon as promised.
-
+CI exists to generate amd64 images and arm64 images
 ## The important bit
 
 1. I am not a security expert
