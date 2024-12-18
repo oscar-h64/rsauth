@@ -11,7 +11,7 @@ argon2 = "0.5"
 axum = "0.7"
 axum-extra = { version = "0.9", features = ["typed-header"] }
 bb8 = "0.8"
-config = "0.14"
+config = "0.15"
 diesel = { version = "2.2", features = ["postgres", "time"] }
 diesel-async = { version = "0.5", features = ["postgres", "bb8"]}
 diesel_migrations = { version = "2.2", features = ["postgres"] }
